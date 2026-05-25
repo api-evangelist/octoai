@@ -1,0 +1,250 @@
+aid: octoai
+name: OctoAI
+description: >-
+  OctoAI (formerly OctoML) was a Seattle-based AI inference platform founded
+  in 2019 as a University of Washington Allen School spin-out of the Apache
+  TVM project. The company originally focused on machine-learning model
+  optimization and compilation across CPUs, GPUs, and accelerators, and in
+  June 2023 launched a generative-AI SaaS inference platform that served
+  open-source foundation models (Llama 2, Mixtral, SDXL, Stable Diffusion,
+  Whisper) behind OpenAI-style REST APIs with Python and TypeScript SDKs.
+  In January 2024 OctoML formally rebranded to OctoAI and in April 2024
+  unveiled OctoStack, a self-contained generative-AI production stack for
+  deploying models inside customer VPC and on-premises environments across
+  NVIDIA GPUs, AMD GPUs, and AWS Inferentia. NVIDIA acquired OctoAI in
+  September 2024 for a reported $165M (down from a 2021 peak valuation of
+  ~$900M), with CEO Luis Ceze and key staff joining NVIDIA. OctoAI sent
+  customers a "Wind down of OctoAI Services" notice and terminated all
+  hosted endpoints, accounts, and SDK access on 31 October 2024. The
+  octo.ai domain now 301-redirects to nvidia.com and no public OctoAI
+  product, API, dashboard, or developer portal remains; the technology has
+  been absorbed into NVIDIA's internal AI inference stack and is not
+  separately purchasable. This catalog entry is a historical record of the
+  former OctoAI developer surface and the GitHub artifacts that remain.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Acquired
+  - Defunct
+  - AI Inference
+  - Generative AI
+  - LLM
+  - Foundation Models
+  - Model Optimization
+  - Apache TVM
+  - GPU
+  - Private AI
+  - NVIDIA
+url: https://raw.githubusercontent.com/api-evangelist/octoai/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+apis:
+  - aid: octoai:octoai-text-gen-api
+    name: OctoAI Text Gen Inference API
+    description: >-
+      OpenAI-compatible chat and text-completion endpoints serving open-source
+      LLMs including Llama 2, Llama 3, Mixtral 8x7B, Mistral 7B, Code Llama,
+      and customer fine-tunes. Supported streaming, function calling, JSON mode,
+      and a shared model catalog. The API was reachable at
+      https://text.octoai.run/v1 and shut down on 31 October 2024.
+    humanURL: https://octo.ai
+    baseURL: https://text.octoai.run/v1
+    tags:
+      - LLM
+      - Chat
+      - Completions
+      - OpenAI Compatible
+      - Defunct
+    properties:
+      - type: StatusPage
+        url: https://octo.ai
+        description: Domain now 301-redirects to nvidia.com; service terminated 31 October 2024.
+  - aid: octoai:octoai-image-gen-api
+    name: OctoAI Image Gen Inference API
+    description: >-
+      Text-to-image and image-to-image inference for SDXL, SDXL-Lightning,
+      Stable Diffusion 1.5, and SSD-1B with ControlNet, LoRA, and adapter
+      support, plus inpainting and asset-management endpoints. The API was
+      reachable at https://image.octoai.run and shut down on 31 October 2024.
+    humanURL: https://octo.ai
+    baseURL: https://image.octoai.run
+    tags:
+      - Images
+      - Diffusion
+      - SDXL
+      - ControlNet
+      - Defunct
+    properties:
+      - type: StatusPage
+        url: https://octo.ai
+        description: Domain now 301-redirects to nvidia.com; service terminated 31 October 2024.
+  - aid: octoai:octoai-asset-library-api
+    name: OctoAI Asset Library API
+    description: >-
+      Endpoints for uploading, listing, and managing user assets — checkpoints,
+      LoRAs, textual inversions, ControlNets, and VAE files — used by the image
+      and text inference APIs. The API was reachable under api.octoai.cloud and
+      shut down on 31 October 2024.
+    humanURL: https://octo.ai
+    baseURL: https://api.octoai.cloud
+    tags:
+      - Assets
+      - LoRA
+      - Checkpoints
+      - Defunct
+    properties:
+      - type: StatusPage
+        url: https://octo.ai
+        description: Domain now 301-redirects to nvidia.com; service terminated 31 October 2024.
+  - aid: octoai:octoai-compute-service-api
+    name: OctoAI Compute Service API
+    description: >-
+      Container-deployment API ("Compute Service") that let customers build,
+      register, and serve their own custom model containers on OctoAI's
+      managed GPU fleet, with autoscaling and OpenAI-style invocation. Shut
+      down on 31 October 2024.
+    humanURL: https://octo.ai
+    baseURL: https://api.octoai.cloud
+    tags:
+      - Compute
+      - Containers
+      - Custom Models
+      - Deployment
+      - Defunct
+    properties:
+      - type: StatusPage
+        url: https://octo.ai
+        description: Domain now 301-redirects to nvidia.com; service terminated 31 October 2024.
+  - aid: octoai:octostack
+    name: OctoStack
+    description: >-
+      OctoStack was OctoAI's self-contained generative-AI production stack
+      for deploying open and customer-trained foundation models inside a
+      customer's VPC or on-premises environment. Announced April 2024, it
+      supported NVIDIA GPUs, AMD GPUs, and AWS Inferentia, claimed 4x
+      better GPU utilization, and bundled high-utilization batching,
+      fine-tuning, and asset management. OctoStack is no longer offered as
+      a standalone product after the NVIDIA acquisition; its technology has
+      been absorbed into NVIDIA's inference stack.
+    humanURL: https://octo.ai
+    tags:
+      - Private AI
+      - On-Prem
+      - VPC
+      - Inference
+      - Defunct
+    properties:
+      - type: StatusPage
+        url: https://octo.ai
+        description: Product wound down after NVIDIA acquisition; absorbed into NVIDIA's inference stack.
+common:
+  - type: Website
+    url: https://octo.ai
+  - type: GitHubOrganization
+    url: https://github.com/octoml
+  - type: Acquirer
+    url: https://www.nvidia.com
+  - type: AcquisitionAnnouncement
+    url: https://www.geekwire.com/2024/chip-giant-nvidia-acquires-octoai-a-seattle-startup-that-helps-companies-run-ai-models/
+  - type: WindDownNotice
+    url: https://www.sunsethq.com/blog/octoai-acquisition
+  - type: Crunchbase
+    url: https://www.crunchbase.com/organization/octoml
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/octoml
+  - type: Features
+    data:
+      - name: OpenAI-Compatible Inference
+        description: >-
+          OctoAI's text and image endpoints implemented OpenAI-style request
+          and response shapes so existing OpenAI client code could be
+          repointed by changing the base URL and API key.
+      - name: Open-Source Model Catalog
+        description: >-
+          A shared catalog hosted Llama 2/3, Mixtral, Mistral, Code Llama,
+          SDXL, SSD-1B, Stable Diffusion 1.5, and Whisper behind per-token
+          and per-image pricing without GPU provisioning.
+      - name: Custom Model Compute Service
+        description: >-
+          Customers could package their own model containers and have OctoAI
+          autoscale them on a managed GPU fleet, billed by GPU-second.
+      - name: Asset Library
+        description: >-
+          Upload and manage LoRAs, checkpoints, textual inversions, VAEs,
+          and ControlNets and apply them at request time to image and
+          text-generation endpoints.
+      - name: OctoStack Private Deployment
+        description: >-
+          Self-contained inference stack that ran inside a customer VPC or
+          on-premises across NVIDIA, AMD, and AWS Inferentia hardware with
+          fine-tuning, batching, and asset management built in.
+      - name: TVM-Based Model Optimization
+        description: >-
+          OctoAI's optimization pipeline descended from Apache TVM (created
+          by founder Tianqi Chen) and used ML-guided compilation to improve
+          throughput and latency across heterogeneous accelerators.
+  - type: UseCases
+    data:
+      - name: Repointing OpenAI Workloads to Open Models
+        description: >-
+          Teams used the OpenAI-compatible endpoints to swap GPT-3.5/4 calls
+          for Llama 2 / Mixtral at lower cost without rewriting client code.
+      - name: Generative Image Pipelines
+        description: >-
+          Product, marketing, and creative teams ran SDXL-based image
+          generation with custom LoRAs and ControlNets for branded asset
+          production.
+      - name: Private Generative AI in Regulated Industries
+        description: >-
+          Healthcare, financial-services, and government customers deployed
+          OctoStack in-VPC or on-premises to keep prompts, completions, and
+          model weights inside their security boundary.
+      - name: Custom Fine-Tune Hosting
+        description: >-
+          Teams fine-tuned open-weights models and served the resulting
+          adapters and full-weight checkpoints behind OctoAI inference
+          endpoints without managing GPU infrastructure.
+  - type: Integrations
+    data:
+      - name: NVIDIA
+        description: >-
+          Acquired OctoAI in September 2024 for a reported $165M; OctoAI
+          team and technology absorbed into NVIDIA's AI inference stack and
+          all OctoAI hosted services terminated on 31 October 2024.
+      - name: Apache TVM
+        description: >-
+          OctoAI's optimization stack originated from Apache TVM, the
+          deep-learning compiler founded by OctoAI co-founder Tianqi Chen at
+          the University of Washington.
+      - name: AWS
+        description: >-
+          OctoAI was an AWS Partner; OctoStack ran on AWS GPU instances and
+          AWS Inferentia accelerators, with sagemaker-examples published in
+          the GitHub org.
+      - name: Docker
+        description: >-
+          OctoAI ran a DockerCon 2023 generative-AI workshop and published
+          the dockercon23-octoai workshop repo.
+      - name: LangChain & LlamaIndex
+        description: >-
+          OctoAI's LLM endpoints shipped with documented LangChain and
+          LlamaIndex providers, demonstrated in the octoml-llm-qa sample
+          repo.
+  - type: SDK
+    data:
+      - name: Python SDK
+        description: >-
+          octoai-python-sdk — Python client for the OctoAI inference,
+          asset-library, and compute-service APIs. Package and repo were
+          retired alongside the service shutdown on 31 October 2024.
+      - name: TypeScript SDK
+        description: >-
+          octoai-typescript-sdk — TypeScript / Node.js client for the
+          OctoAI inference and asset APIs. Retired alongside the service
+          shutdown on 31 October 2024.
+  - type: SuccessorOrganization
+    url: https://www.nvidia.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
