@@ -231,7 +231,7 @@ common:
           OctoAI's LLM endpoints shipped with documented LangChain and
           LlamaIndex providers, demonstrated in the octoml-llm-qa sample
           repo.
-  - type: SDK
+  - type: SDKs
     data:
       - name: Python SDK
         description: >-
