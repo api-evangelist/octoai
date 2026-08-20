@@ -65,6 +65,12 @@ apis:
       - LLM
       - Chat
       - Completions
+      - OpenAI-Compatible
+      - Defunct
+    tags_raw:
+      - LLM
+      - Chat
+      - Completions
       - OpenAI Compatible
       - Defunct
     properties:
@@ -81,6 +87,12 @@ apis:
     humanURL: https://octo.ai
     baseURL: https://image.octoai.run
     tags:
+      - Image
+      - Diffusion
+      - SDXL
+      - ControlNet
+      - Defunct
+    tags_raw:
       - Images
       - Diffusion
       - SDXL
