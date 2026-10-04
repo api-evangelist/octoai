@@ -45,6 +45,18 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/octoai.png
 tags:
 - Acquired
 - Defunct
+- Inference
+- Generative AI
+- LLM
+- Foundation Models
+- Model Optimization
+- Apache TVM
+- GPU
+- Private AI
+- NVIDIA
+tags_raw:
+- Acquired
+- Defunct
 - AI Inference
 - Generative AI
 - LLM
