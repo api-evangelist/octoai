@@ -104,7 +104,7 @@ apis:
   baseURL: https://image.octoai.run
   tags:
   - Image
-  - Diffusion
+  - Diffusion Models
   - SDXL
   - ControlNet
   - Defunct
