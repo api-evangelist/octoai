@@ -1,4 +1,4 @@
-# octoai
+# OctoAI
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,8 +64,53 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-OctoAI (formerly OctoML) was a Seattle-based AI inference platform serving open-source foundation models (Llama 2/3, Mixtral, SDXL, Stable Diffusion, Whisper) behind OpenAI-compatible REST APIs, plus OctoStack for private VPC and on-premises deployment.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**Status: defunct.** NVIDIA acquired OctoAI in September 2024 (reported ~$165M) and OctoAI terminated all hosted services, accounts, and SDK access on 31 October 2024. The `octo.ai` domain 301-redirects to nvidia.com. The team and technology were absorbed into NVIDIA's internal AI inference stack and are not separately purchasable.
+OctoAI (formerly OctoML) was a Seattle-based AI inference platform founded in 2019 as a University of Washington Allen School spin-out of the Apache TVM project. The company originally focused on machine-learning model optimization and compilation across CPUs, GPUs, and accelerators, and in June 2023 launched a generative-AI SaaS inference platform that served open-source foundation models (Llama 2, Mixtral, SDXL, Stable Diffusion, Whisper) behind OpenAI-style REST APIs with Python and TypeScript SDKs. In January 2024 OctoML formally rebranded to OctoAI and in April 2024 unveiled OctoStack, a self-contained generative-AI production stack for deploying models inside customer VPC and on-premises environments across NVIDIA GPUs, AMD GPUs, and AWS Inferentia. NVIDIA acquired OctoAI in September 2024 for a reported $165M (down from a 2021 peak valuation of ~$900M), with CEO Luis Ceze and key staff joining NVIDIA. OctoAI sent customers a "Wind down of OctoAI Services" notice and terminated all hosted endpoints, accounts, and SDK access on 31 October 2024. The octo.ai domain now 301-redirects to nvidia.com and no public OctoAI product, API, dashboard, or developer portal remains; the technology has been absorbed into NVIDIA's internal AI inference stack and is not separately purchasable. This catalog entry is a historical record of the former OctoAI developer surface and the GitHub artifacts that remain.
 
-This repository is an api.json/apis.yml historical record of the former OctoAI developer surface (text-gen, image-gen, asset library, compute service, OctoStack) and the artifacts that remain in the [octoml GitHub org](https://github.com/octoml).
+**Areas:** Acquired · Defunct · Inference · Generative AI · LLM · Foundation Models · Model Optimization · Apache TVM · GPU · Private AI · NVIDIA
+
+## OctoAI on APIs.io (historical record)
+
+Everything profiled for OctoAI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/octoai/](https://apis.io/providers/octoai/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [OctoAI Text Gen Inference API](https://apis.io/apis/octoai/octoai-text-gen-api/) — OpenAI-compatible chat and text-completion endpoints serving open-source LLMs including Llama 2, Llama 3, Mixtral 8x7B, Mistral 7B, Code Llama, and customer…
+- [OctoAI Image Gen Inference API](https://apis.io/apis/octoai/octoai-image-gen-api/) — Text-to-image and image-to-image inference for SDXL, SDXL-Lightning, Stable Diffusion 1.5, and SSD-1B with ControlNet, LoRA, and adapter support, plus…
+- [OctoAI Asset Library API](https://apis.io/apis/octoai/octoai-asset-library-api/) — Endpoints for uploading, listing, and managing user assets — checkpoints, LoRAs, textual inversions, ControlNets, and VAE files — used by the image and text…
+- [OctoAI Compute Service API](https://apis.io/apis/octoai/octoai-compute-service-api/) — Container-deployment API ("Compute Service") that let customers build, register, and serve their own custom model containers on OctoAI's managed GPU fleet,…
+- [OctoStack](https://apis.io/apis/octoai/octostack/) — OctoStack was OctoAI's self-contained generative-AI production stack for deploying open and customer-trained foundation models inside a customer's VPC or…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Octoai Domain Security](https://apis.io/security/octoai/octoai-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://octo.ai)
+- [GitHub](https://github.com/octoml)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OctoAI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/octoai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
